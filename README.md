@@ -1,16 +1,16 @@
-# ⚡ 4-to-1 Multiplexer: Logic Design & PCB Implementation
+# 4-to-1 Multiplexer: Logic Design & PCB Implementation
 
-## 📝 Overview
+## Overview
 This project details the systematic design process of a 4-to-1 Multiplexer (MUX) combinational logic circuit. The workflow spans from defining the functional truth table and deriving the Boolean expression to minimizing logic gates for physical Printed Circuit Board (PCB) implementation. A strong emphasis is placed on Bill of Materials (BOM) cost optimization through universal logic gate synthesis.
 
-## 🛠️ Tools & Components
+## Tools & Components
 * **Simulation & Schematic:** Proteus 8, KiCad
 * **PCB Layout:** Proteus 8
 * **Active Components:** 3x 74HC00 (Quad 2-input NAND gate ICs)
 * **Passive & UI Components:** 6x Red LEDs (Input state indicators), 1x Green LED (Output indicator), 7x 220Ω Resistors, 6x 10kΩ Resistors.
 * **Hardware Base:** 12cm x 8cm Copper Board.
 
-## 🧠 Logic Minimization & BOM Optimization (Engineering Highlight)
+## Logic Minimization & BOM Optimization (Engineering Highlight)
 The canonical Sum-of-Products (SOP) expression for the 4-to-1 MUX was derived from the truth table as:
 `Y = (S1'.S0'.I₀) + (S1'.S0.I₁) + (S1.S0'.I₂) + (S1.S0.I₃)`
 
@@ -19,15 +19,16 @@ To optimize manufacturing costs and simplify routing, the design constraint was 
 * **Solution 3 (Chosen Design):** Through meticulous Boolean algebra manipulation, the logic was minimized to require **only 11 NAND gates**. This allowed the entire system to be built using just three inexpensive **74HC00N** ICs. This optimization successfully reduced the logic component cost to 9,600 VND while improving board space efficiency.
 
 *(Paste your handwritten logic derivation image here - Fig 2 / Fig 3)*
-![Logic Derivation](link_anh_hinh_tinh_toan_logic_cua_ban.png)
 
-## 💻 Simulation Verification
+(https://github.com/Hudo1501/4-to-1-Multiplexer/blob/37a3eb20336899f85c454583f295ef8d6ca089c8/simplify_table.jpg)
+
+## Simulation Verification
 The minimized gate-level schematic was built and simulated in Proteus 8. All 16 possible combinations of data inputs (I0 to I3) and select inputs (S1, S2) were rigorously tested. The output 'Y' accurately reflected the selected data channel across all scenarios, verifying the mathematical logic.
 
 *(Paste 1 or 2 schematic simulation images here - e.g., Fig 6, 7, 8, or 9)*
 ![Proteus Simulation](link_anh_hinh_mo_phong_Proteus.png)
 
-## 🖨️ PCB Layout & Physical Implementation
+## PCB Layout & Physical Implementation
 The verified logic was routed on a 12x8cm custom copper board. To make the digital behavior easily observable, Red LEDs were integrated to indicate the real-time high/low states of the inputs, while a Green LED was used to display the final routed output signal.
 
 *(Paste your Proteus PCB Layout and 3D View here - Fig 4 & Fig 5)*
@@ -36,7 +37,7 @@ The verified logic was routed on a 12x8cm custom copper board. To make the digit
 *(Paste your final physical hardware testing image here)*
 ![Physical Hardware](link_anh_mach_that_dang_chay.png)
 
-## 👨‍💻 My Contribution
+## My Contribution
 As a core member of Team 1, my primary contributions (accounting for 35% of the total workload) included:
 * **Simulation:** Translating the derived Boolean logic into the Proteus schematic and conducting comprehensive state-space testing.
 * **PCB Design:** Routing the physical traces and finalizing the board layout for hardware fabrication.
