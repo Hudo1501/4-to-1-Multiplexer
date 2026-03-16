@@ -30,6 +30,7 @@ The minimized gate-level schematic was built and simulated in Proteus 8. All 16 
 The verified logic was routed on a 12x8cm custom copper board. To make the digital behavior easily observable, Red LEDs were integrated to indicate the real-time high/low states of the inputs, while a Green LED was used to display the final routed output signal.
 
 *(Paste your Proteus PCB Layout and 3D View here - Fig 4 & Fig 5)*
+![image](https://github.com/Hudo1501/4-to-1-Multiplexer/blob/9efa8cc52a372fe0ac6833943b4eb326db571543/layout.jpg)
 ![image](https://github.com/Hudo1501/4-to-1-Multiplexer/blob/c70d2fa79254cbfc412de4f14d992998a83793ce/3d_front.jpg)
 ![image](https://github.com/Hudo1501/4-to-1-Multiplexer/blob/72190008b4e57703fd8c99165d8a23e0ef781faa/3d_bottom.jpg)
 *(Paste your final physical hardware testing image here)*
